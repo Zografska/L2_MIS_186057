@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class ClothesQuestion extends StatelessWidget {
-  var _stringquestionContent;
+  String _stringquestionContent;
 
-  ClothesQuestion(this._stringquestionContent);
+  ClothesQuestion(this._stringquestionContent, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      margin: const EdgeInsets.all(5),
+      margin: const EdgeInsets.all(10),
       child: Text(
         _stringquestionContent,
         textAlign: TextAlign.center,
